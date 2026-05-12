@@ -1,0 +1,27 @@
+#include <stdio.h>
+ void ticketChange(int age, int *ticket){
+ 	 if(age<12){
+ 	 	*ticket = *ticket - (*ticket * 0.5);
+	  }
+	  else if(age>=60){
+	  	*ticket = *ticket - (*ticket * 0.3);	 
+	 }
+ }
+      
+ int main(){
+ 	int age;
+ 	int ticket;
+ 	 
+ 	 printf("Enter ticket price: ");
+ 	 scanf("%d", &ticket);
+ 	 
+ 	  printf("Enter customer age: ");
+ 	  scanf("%d", &age);
+ 	   printf("Before update: %d\n", ticket);
+ 	  
+ 	  
+	   ticketChange(age, &ticket);                                      //ticketChange(age, ticket);
+ 	   
+	  
+	  printf("Afer update: %d", ticket); 	
+ }
