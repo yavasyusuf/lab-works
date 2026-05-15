@@ -4,7 +4,7 @@ void replaceMin(int *temp){
 	printf("Enter 7 temperature values: ");
 		int min = *temp;
 		int i;
-		scanf("%d", temp);  //u should give first value unless it could be garbage value
+		scanf("%d", temp);  //u should give the first value unless it can be a garbage value
 	for(i = 1;i<SIZE;i++){
 		scanf("%d", temp + i);
 		
